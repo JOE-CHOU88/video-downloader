@@ -83,7 +83,7 @@ getAudio = (videoURL, res) => {
   
       // Get video details and emit them
       ytdl.getInfo(videoURL).then((info) => {
-        console.log("all:", info.videoDetails);
+        // console.log("all:", info.videoDetails);
         console.log("title:", info.videoDetails.title);
         console.log("uploaded by:", info.videoDetails.author.name);
         console.log("picture:", info.videoDetails.thumbnails[info.videoDetails.thumbnails.length - 1].url);
